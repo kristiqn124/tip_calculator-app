@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+p {
+  color: hsl(184, 14%, 56%);
+  font-weight: 600;
+}
+.header {
+  margin-top: 5em;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 50px;
+  width: 50%;
+  height: 50vh;
+  padding: 35px;
+}
+.input_container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#bill {
+  width: 100%;
+}
+#people {
+  width: 100%;
+}
+.bill_input {
+  height: 20%;
+  padding: 10px;
+}
+.people_input {
+  height: 20%;
+  padding: 10px;
+}
+.container_btn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.tip_input p {
+  margin-bottom: 10px;
+}
+.btn_percent {
+  font-family: "Space Mono", monospace;
+  width: 7vw;
+  height: 6vh;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  border-style: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn_percent:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+.btn_click {
+  background-color: hsl(186, 14%, 43%);
+  color: hsl(183, 100%, 15%);
+}
+
+.input-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  border-radius: 5px;
+  margin: 10px;
+}
+.input-field:hover {
+  border-style: solid;
+  border-color: hsl(172, 67%, 45%);
+}
+.percent_input {
+  font-size: 20px;
+  text-align: center;
+}
+.percent_input:hover {
+  border-color: hsl(172, 67%, 45%);
+}
+.percent_input {
+  width: 7vw;
+  height: 6vh;
+  border-style: none;
+  border-radius: 8px;
+  background-color: hsl(189, 41%, 97%);
+}
+
+.output_container {
+  background-color: hsl(183, 100%, 15%);
+  width: 50%;
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex_space {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.reset_btn_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reset_btn {
+  width: 100%;
+  height: 6vh;
+  color: white;
+  background-color: hsl(172, 67%, 45%);
+  border-style: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.price_tootal_tip {
+  font-weight: 700;
+  font-size: 40px;
+  color: hsl(172, 67%, 45%);
+}
+
+.input_style {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  height: 100%;
+  text-align: right;
+  background-color: transparent;
+  color: hsl(183, 100%, 15%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.color_header {
+  color: white;
+}
+.color_header span {
+  color: hsl(184, 14%, 56%);
+}
+.err {
+  display: none;
+  color: red;
+}
+.err_message_border {
+  border-color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 90%;
+    height: 100%;
+  }
+  .input_container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .output_container {
+    width: auto;
+    margin: 0px;
+  }
+  .container_btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+  .btn_percent {
+    width: 100%;
+  }
+  .percent_input {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 90%;
+    height: 100%;
+  }
+  .input_container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .output_container {
+    width: auto;
+    margin: 0px;
+  }
+  .btn_percent {
+    width: 100%;
+  }
+  .percent_input {
+    width: 100%;
+  }
+}
